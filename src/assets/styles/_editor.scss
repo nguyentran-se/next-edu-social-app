@@ -1,0 +1,110 @@
+.quill-editor {
+  $primary-color: #06c;
+  $bg-color: #f2f5f9;
+  $transition: background-color linear 0.1s;
+  font-family: 'Roboto', sans-serif;
+
+  & .ql-container.ql-snow {
+    border: none;
+    font-size: 14px;
+    height: 280px;
+  }
+  & .ql-toolbar.ql-snow {
+    border: none;
+    // border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+  }
+
+  & .ql-header.ql-picker {
+    border-radius: 4px;
+  }
+
+  & .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+    border-radius: inherit;
+    margin-top: 0px;
+  }
+
+  & .ql-snow .ql-picker.ql-expanded .ql-stroke {
+    stroke: $primary-color !important;
+  }
+  & .ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    color: $primary-color;
+    background-color: $bg-color;
+    font-weight: 500;
+    border-color: $primary-color !important;
+  }
+
+  & .ql-picker-label {
+    border-radius: 4px;
+    transition: $transition;
+
+    &:hover {
+      background-color: $bg-color;
+    }
+  }
+
+  & .ql-formats button[type='button'] {
+    transition: $transition;
+    &:hover {
+      background-color: $bg-color;
+    }
+  }
+
+  //Tooltip edit link
+  & .ql-tooltip.ql-editing {
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 6px 12px;
+    &::before {
+      content: '';
+    }
+    & .ql-action {
+      margin-left: 16px;
+      padding: 4px 6px;
+      border-radius: 4px;
+
+      transition: $transition;
+
+      &:hover {
+        background-color: $bg-color;
+      }
+
+      &::after {
+        margin: 0;
+      }
+    }
+    & input {
+      outline: none;
+      border-radius: 4px;
+      width: 240px !important;
+      font-family: 'Roboto', sans-serif;
+      height: 32px !important;
+      font-size: 15px;
+    }
+  }
+}
+
+.comment-quill-editor {
+  border-radius: inherit;
+  & .ql-container.ql-snow {
+    border: none;
+    font-size: 14px;
+    height: auto;
+    background-color: #f0f2f5;
+    border-radius: inherit;
+  }
+  & .ql-editor {
+    border-radius: inherit;
+    padding: 6px 15px;
+  }
+  & .ql-toolbar {
+    display: none;
+  }
+}
+
+.MuiTypography-root .mention {
+  padding-top: 0;
+  padding-bottom: 2px;
+}

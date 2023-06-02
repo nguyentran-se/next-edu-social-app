@@ -1,0 +1,39 @@
+@use './reset';
+@use './editor';
+@use './animation';
+@use './react-select';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.active-link {
+  // background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(229, 232, 255);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bcc0c4;
+}
