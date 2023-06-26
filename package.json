@@ -41,7 +41,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.5",
     "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.10.1",
     "react-quill": "^2.0.0",
     "react-select": "^5.7.2",
     "talkjs": "^0.15.6",
